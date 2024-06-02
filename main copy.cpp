@@ -1,25 +1,8 @@
-//
-//  main.cpp
-//  Avance2 31/05/24
-//
-//  Created by Ma. Guadalupe Roque Díaz de León on 31/05/24.
-//
-
-// Clases Base - Video - con método virtual str() para Poliformismo
-// Clases Derivadas - Pelicula, Serie
-// Clase usada para composición - Episodio
-// Clase Polimorfismo -  para aplicar el polimorfismo con el método virtual y las clases derivadas
-// Arreglo de apuntadores
-
-
 /*
-Añade por favor en cada clase este comentario con toda tu información 
-Nombre:
-Matricula:
-Carrera:
-Fecha: 
-Reflexión:
-- ¿Qué aprendí en el desarrollo de esta clase?
+Nombre: Grecia Klarissa Saucedo Sandoval 
+Matricula: A00839374
+Carrera: ITC
+Fecha: 2/junio/2024 
 */
 
 #include <iostream>
