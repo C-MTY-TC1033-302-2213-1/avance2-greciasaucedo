@@ -62,12 +62,12 @@ int main() {
 
     switch (opcion){
         case 1:
-           neflix.leerArchivo("Inventario1-1.csv");
+           neflix.leerArchivo("Inventario1.csv");
            polimorfismo(neflix);
            break;
 
         case 2:
-          neflix.leerArchivo("Inventario2-1.csv");
+          neflix.leerArchivo("Inventario2.csv");
           polimorfismo(neflix);
           break;
 
