@@ -181,6 +181,7 @@ Polimorfismo::Polimorfismo(){
             } else {
             cout << "No series" << endl;
         }
+        cout << endl;
     }
     
     // Método para leer el archivo
