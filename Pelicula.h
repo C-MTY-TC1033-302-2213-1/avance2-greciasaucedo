@@ -3,7 +3,8 @@ Nombre: Grecia Klarissa Saucedo Sandoval
 Matricula: A00839374
 Carrera: ITC
 Fecha: 2/junio/2024 
-¿Qué aprendí en el desarrollo de esta clase?
+¿Qué aprendí en el desarrollo de esta clase? Que no necesito agregar todos los 
+nombres solamente de lo nuevo ya que se heredan de otras clases.
 */
 
 #ifndef Pelicula_h

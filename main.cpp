@@ -15,7 +15,7 @@ Fecha: 2/junio/2024
 #include <string>
 using namespace std;
 
-void polimorfismo(Polimorfismo inventario){
+void polimorfismo(Polimorfismo& inventario){
   // Declaración de variables locales
  int opcion, oscares, cantidadEpisodios;
  double calificacion;
@@ -62,12 +62,12 @@ int main() {
 
     switch (opcion){
         case 1:
-           neflix.leerArchivo("Inventario1.csv");
+           neflix.leerArchivo("Inventario1-1.csv");
            polimorfismo(neflix);
            break;
 
         case 2:
-          neflix.leerArchivo("Inventario2.csv");
+          neflix.leerArchivo("Inventario2-1.csv");
           polimorfismo(neflix);
           break;
 

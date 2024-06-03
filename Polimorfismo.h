@@ -3,7 +3,9 @@ Nombre: Grecia Klarissa Saucedo Sandoval
 Matricula: A00839374
 Carrera: ITC
 Fecha: 2/junio/2024 
-¿Qué aprendí en el desarrollo de esta clase?
+¿Qué aprendí en el desarrollo de esta clase? Se me hizo muy interesante, 
+aprendí a implementar el Polimorfismo mediante pointers para llamar y utilizar 
+objetos de clases derivadas al igual que utilice overriding
 */
 
 #ifndef Polimorfismo_h
@@ -19,6 +21,7 @@ Fecha: 2/junio/2024
 #include "Pelicula.h"
 #include "Serie.h"
 #include "Video.h"
+#include "Episodio.h"
 
 using namespace std;
 
