@@ -42,6 +42,7 @@ public:
         double calculaPromedio ();
         void calculaDuracion(); // Método agregado 
         string str ();
+        
         void agregaEpisodio (Episodio episodio); 
 
 };

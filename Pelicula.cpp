@@ -14,7 +14,7 @@ Fecha: 2/junio/2024
     Pelicula::Pelicula(string _iD, string _titulo,
             int _duracion, string _genero,
             double _calificacion, int _oscares):Video(_iD, _titulo, _duracion, _genero, _calificacion){
-                oscares = _oscares;
+            oscares = _oscares;
             }
 
     // Métodos modificadores - setters

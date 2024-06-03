@@ -1,14 +1,11 @@
 /*
-
-Nombre: Grecia Klarissa Saucedo Sandoval
-Matrícula: A00839374
+Nombre: Grecia Klarissa Saucedo Sandoval 
+Matricula: A00839374
 Carrera: ITC
-Fecha: 26 - MAYO - 2024
-
+Fecha: 2/junio/2024 
 */
+
 #include "Polimorfismo.h"
-#include "Serie.h"
-#include "Pelicula.h"
 #include <fstream>
 #include <sstream>
 #include <iostream>
@@ -48,6 +45,7 @@ Polimorfismo::Polimorfismo(){
         // Si no existe
         return nullptr;
     }
+
     int Polimorfismo::getCantidad(){
         return cantidad;
     }
@@ -72,15 +70,15 @@ Polimorfismo::Polimorfismo(){
             // * indireccion (ptr) genera el objeto 
             cout << arrPtrVideos[index]->str() << endl;
             
-            if (typeid (*arrPtrVideos[index]) = typeid(Peliculas)){
+            if (typeid (*arrPtrVideos[index]) == typeid(Pelicula)){
                 contPeliculas++;
             }
-            else if (typeid (*arrPtrVideos[index]) = typeid(Series)){
+            else if (typeid (*arrPtrVideos[index]) == typeid(Serie)){
                 contSeries++;
             } 
         }
         // Fuera del for desplegar los totales 
-        cout << "Peliculas = " << contPeliculas << endl;
+        cout<< "Peliculas = " << contPeliculas << endl;
         cout << "Series = " << contSeries << endl;
     }
 
@@ -123,7 +121,7 @@ Polimorfismo::Polimorfismo(){
             // Verificar si genero == _genero
             if (arrPtrVideos[index]->getGenero() == _genero){
                 cout << arrPtrVideos[index]->str() << endl;
-                total++:
+                total++;
             }
         }
         // Desplegar total fuera del for
@@ -184,9 +182,6 @@ Polimorfismo::Polimorfismo(){
             cout << "No series" << endl;
         }
     }
-
-    // Inicializar cantidad de videos
-    cantidad= 0;
     
     // Método para leer el archivo
     void Polimorfismo::leerArchivo (string nombre){
@@ -204,7 +199,7 @@ Polimorfismo::Polimorfismo(){
         entrada.open (nombre, ios::in); // Abrir archivo de entrad)
 
         // En caso que haya un problema para abrir el archivo, se imprime este mensaje 
-        if (!entrada.is_open) {
+        if (!entrada.is_open()) {
             cerr << "Error al abrir el archivo!" << endl;
             return;
         }
@@ -214,7 +209,7 @@ Polimorfismo::Polimorfismo(){
             iR = 0;                      // cada vez que inicia una nueva línea inicializar iR = 0 
 
             // Ciclo que extrae caracteres de s y los almacena en word hasta que se encuentra el delimitador ','
-            while(getline(s, word, ',')) {
+            while (getline(s, word, ',')) {
                 row[iR++] = word; // Añade word al arreglo row e incrementa iR p/la prosima palabra
             } 
 
@@ -261,7 +256,6 @@ Polimorfismo::Polimorfismo(){
                 // str se ejecuta al metodo de constructor no de arreglo
             //}
 
-            entrada.close();
         }
 
     

@@ -8,6 +8,10 @@ Fecha: 2/junio/2024
 #include "Serie.h"
 
 // Constructores
+        Serie::Serie() : Video() {
+            cantidad = 0;
+        }
+        
         Serie::Serie(string _iD, string _titulo, int _duracion, string _genero, double _calificacion)
         :Video(_iD, _titulo, _duracion, _genero, _calificacion){
             // Solo vamos a inicializar cantidad

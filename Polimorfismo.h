@@ -9,6 +9,7 @@ Fecha: 2/junio/2024
 #ifndef Polimorfismo_h
 #define Polimorfismo_h
 
+
 #include <typeinfo>
 #include <iostream>
 #include <sstream>
@@ -17,15 +18,11 @@ Fecha: 2/junio/2024
 #include <string>
 #include "Pelicula.h"
 #include "Serie.h"
-#include "Episodio.h"
 #include "Video.h"
 
 using namespace std;
 
 const int MAX_VIDEOS = 100;
-
-// Identificar si un objeto es de cierta clase usaremos
-if (typeid(*arrPtrVideos[index]) == typeid(Pelicula))
 
 class Polimorfismo {
 private:
@@ -50,6 +47,6 @@ public:
     void reporteGenero(string _genero);
     void reportePeliculas();
     void reporteSeries();
-};
+    };
 
 #endif /* Polimorfismo_h */
