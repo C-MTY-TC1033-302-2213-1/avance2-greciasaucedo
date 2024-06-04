@@ -82,9 +82,9 @@ Fecha: 2/junio/2024
                 string info = "";
                 
                 for (int idex = 0; idex < cantidad; idex++){
-                    info = info + '\n' + episodios[idex].str();
+                    info = info + '\n' + episodios[idex].str() + '\n';
                 } 
-                return iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' +  genero + ' ' + to_string (calificacion) + ' ' + to_string(cantidad) + info; 
+                return iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' +  genero + ' ' + to_string (calificacion) + ' ' + to_string(cantidad) + info + '\n'; 
         }
         else{
             return iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' +  genero + ' ' + to_string (calificacion) + ' ' + to_string(cantidad) + '\n'; 

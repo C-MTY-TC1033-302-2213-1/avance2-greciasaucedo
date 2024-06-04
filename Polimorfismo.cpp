@@ -50,7 +50,7 @@ Polimorfismo::Polimorfismo(){
         return cantidad;
     }
 
-    // Otros métodos 
+// Otros métodos 
     /* reporteInventario
     Despliega todas las series y peliculas del arreglo 
     al final despliega ## indica la cantidad en existencia
