@@ -51,20 +51,20 @@ Fecha: 2/junio/2024
 
         // Otros métodos 
         double Serie::calculaPromedio (){
-        double acum = 0;
+            double acum = 0;
 
-        for (int idex = 0; idex < cantidad; idex++){
-            acum = acum + episodios[idex].getCalificacion(); 
-        }
+            for (int idex = 0; idex < cantidad; idex++){
+                acum = acum + episodios[idex].getCalificacion(); 
+            }
         
-        // Validar que tenga episodios
-        if (cantidad > 0){
-            return acum / cantidad;
+            // Validar que tenga episodios
+            if (cantidad > 0){
+                return acum / cantidad;
         }
-        else {
-            return 0;
+            else {
+                return 0;
         }
-        }
+    }
 
         void Serie::calculaDuracion() {
             int duracionTotal = 0;
@@ -78,19 +78,12 @@ Fecha: 2/junio/2024
         
     // Overriding del método str() de la clase Base 
         string Serie::str (){
-            if (cantidad > 0){
-                string info = "";
-                
-                for (int idex = 0; idex < cantidad; idex++){
-                    info = info + '\n' + episodios[idex].str() + '\n';
-                } 
-                return iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' +  genero + ' ' + to_string (calificacion) + ' ' + to_string(cantidad) + info + '\n'; 
+            string str = Video::str() + " " + to_string(cantidad) + "\n";
+            for (int index = 0; index < cantidad; index++){
+            str += episodios[index].str() + "\n";
         }
-        else{
-            return iD + ' ' + titulo + ' ' + to_string(duracion) + ' ' +  genero + ' ' + to_string (calificacion) + ' ' + to_string(cantidad) + '\n'; 
-        
-        }
-        }
+        return str;
+    }
 
     // Agrega un episodio solo si existe espacio 
         void Serie::agregaEpisodio (Episodio episodio) {
